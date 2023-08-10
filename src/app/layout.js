@@ -5,11 +5,15 @@ import {
 } from 'next/font/google';
 import clsx from 'clsx';
 
-import { LIGHT_TOKENS, DARK_TOKENS } from '@/constants';
+import {
+  LIGHT_TOKENS,
+  DARK_TOKENS,
+} from '@/constants';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './styles.css';
+import { cookies } from 'next/dist/client/components';
 
 const mainFont = Work_Sans({
   subsets: ['latin'],
@@ -25,15 +29,20 @@ const monoFont = Spline_Sans_Mono({
 });
 
 function RootLayout({ children }) {
-  // TODO: Dynamic theme depending on user preference
-  const theme = 'light';
+  const theme =
+    cookies().get('color-theme')?.value || 'light';
 
   return (
     <html
       lang="en"
-      className={clsx(mainFont.variable, monoFont.variable)}
+      className={clsx(
+        mainFont.variable,
+        monoFont.variable
+      )}
       data-color-theme={theme}
-      style={theme === 'light' ? LIGHT_TOKENS : DARK_TOKENS}
+      style={
+        theme === 'light' ? LIGHT_TOKENS : DARK_TOKENS
+      }
     >
       <body>
         <Header theme={theme} />

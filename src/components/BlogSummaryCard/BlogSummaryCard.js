@@ -23,7 +23,9 @@ function BlogSummaryCard({
       <Link href={href} className={styles.title}>
         {title}
       </Link>
-      <time dateTime={publishedOn}>{humanizedDate}</time>
+      <time dateTime={publishedOn}>
+        {humanizedDate}
+      </time>
       <p>
         {abstract}{' '}
         <Link

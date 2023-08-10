@@ -2,7 +2,9 @@ const theme = {
   $schema: 'vscode://schemas/color-theme',
   name: 'dracula',
   author: 'Zeno Rocha',
-  maintainers: ['Derek P Sifford <dereksifford@gmail.com>'],
+  maintainers: [
+    'Derek P Sifford <dereksifford@gmail.com>',
+  ],
   semanticClass: 'theme.dracula',
   semanticHighlighting: true,
   dracula: {
@@ -127,7 +129,8 @@ const theme = {
     'editor.selectionHighlightBackground': '#424450',
     'editor.foldBackground': '#21222C80',
     'editor.wordHighlightBackground': '#8BE9FD50',
-    'editor.wordHighlightStrongBackground': '#50FA7B50',
+    'editor.wordHighlightStrongBackground':
+      '#50FA7B50',
     'editor.findMatchBackground': '#FFB86C80',
     'editor.findMatchHighlightBackground': '#FFFFFF40',
     'editor.findRangeHighlightBackground': '#44475A75',
@@ -135,11 +138,13 @@ const theme = {
     'editor.lineHighlightBorder': '#44475A',
     'editorLink.activeForeground': '#8BE9FD',
     'editor.rangeHighlightBackground': '#BD93F915',
-    'editor.snippetTabstopHighlightBackground': '#282A36',
+    'editor.snippetTabstopHighlightBackground':
+      '#282A36',
     'editor.snippetTabstopHighlightBorder': '#6272A4',
     'editor.snippetFinalTabstopHighlightBackground':
       '#282A36',
-    'editor.snippetFinalTabstopHighlightBorder': '#50FA7B',
+    'editor.snippetFinalTabstopHighlightBorder':
+      '#50FA7B',
     'editorWhitespace.foreground': '#FFFFFF1A',
     'editorIndentGuide.background': '#FFFFFF1A',
     'editorIndentGuide.activeBackground': '#FFFFFF45',
@@ -160,21 +165,28 @@ const theme = {
       '#8BE9FD',
     'editorOverviewRuler.wordHighlightStrongForeground':
       '#50FA7B',
-    'editorOverviewRuler.modifiedForeground': '#8BE9FD80',
+    'editorOverviewRuler.modifiedForeground':
+      '#8BE9FD80',
     'editorOverviewRuler.addedForeground': '#50FA7B80',
-    'editorOverviewRuler.deletedForeground': '#FF555580',
+    'editorOverviewRuler.deletedForeground':
+      '#FF555580',
     'editorOverviewRuler.errorForeground': '#FF555580',
-    'editorOverviewRuler.warningForeground': '#FFB86C80',
+    'editorOverviewRuler.warningForeground':
+      '#FFB86C80',
     'editorOverviewRuler.infoForeground': '#8BE9FD80',
     'editorError.foreground': '#FF5555',
     'editorWarning.foreground': '#8BE9FD',
     'editorGutter.modifiedBackground': '#8BE9FD80',
     'editorGutter.addedBackground': '#50FA7B80',
     'editorGutter.deletedBackground': '#FF555580',
-    'gitDecoration.modifiedResourceForeground': '#8BE9FD',
-    'gitDecoration.deletedResourceForeground': '#FF5555',
-    'gitDecoration.untrackedResourceForeground': '#50FA7B',
-    'gitDecoration.ignoredResourceForeground': '#6272A4',
+    'gitDecoration.modifiedResourceForeground':
+      '#8BE9FD',
+    'gitDecoration.deletedResourceForeground':
+      '#FF5555',
+    'gitDecoration.untrackedResourceForeground':
+      '#50FA7B',
+    'gitDecoration.ignoredResourceForeground':
+      '#6272A4',
     'gitDecoration.conflictingResourceForeground':
       '#FFB86C',
     'diffEditor.insertedTextBackground': '#50FA7B20',
@@ -182,17 +194,20 @@ const theme = {
     'editorWidget.background': '#21222C',
     'editorSuggestWidget.background': '#21222C',
     'editorSuggestWidget.foreground': '#F8F8F2',
-    'editorSuggestWidget.selectedBackground': '#44475A',
+    'editorSuggestWidget.selectedBackground':
+      '#44475A',
     'editorHoverWidget.background': '#282A36',
     'editorHoverWidget.border': '#6272A4',
     'editorMarkerNavigation.background': '#21222C',
     'peekView.border': '#44475A',
     'peekViewEditor.background': '#282A36',
-    'peekViewEditor.matchHighlightBackground': '#F1FA8C80',
+    'peekViewEditor.matchHighlightBackground':
+      '#F1FA8C80',
     'peekViewResult.background': '#21222C',
     'peekViewResult.fileForeground': '#F8F8F2',
     'peekViewResult.lineForeground': '#F8F8F2',
-    'peekViewResult.matchHighlightBackground': '#F1FA8C80',
+    'peekViewResult.matchHighlightBackground':
+      '#F1FA8C80',
     'peekViewResult.selectionBackground': '#44475A',
     'peekViewResult.selectionForeground': '#F8F8F2',
     'peekViewTitle.background': '#191A21',
@@ -216,7 +231,8 @@ const theme = {
     'statusBar.noFolderBackground': '#191A21',
     'statusBar.noFolderForeground': '#F8F8F2',
     'statusBarItem.prominentBackground': '#FF5555',
-    'statusBarItem.prominentHoverBackground': '#FFB86C',
+    'statusBarItem.prominentHoverBackground':
+      '#FFB86C',
     'statusBarItem.remoteForeground': '#282A36',
     'statusBarItem.remoteBackground': '#BD93F9',
     'titleBar.activeBackground': '#21222C',
@@ -225,7 +241,8 @@ const theme = {
     'titleBar.inactiveForeground': '#6272A4',
     'extensionButton.prominentForeground': '#F8F8F2',
     'extensionButton.prominentBackground': '#50FA7B90',
-    'extensionButton.prominentHoverBackground': '#50FA7B60',
+    'extensionButton.prominentHoverBackground':
+      '#50FA7B60',
     'pickerGroup.border': '#BD93F9',
     'pickerGroup.foreground': '#8BE9FD',
     'debugToolBar.background': '#21222C',
@@ -641,7 +658,10 @@ const theme = {
     },
     {
       name: 'Keywords',
-      scope: ['keyword', 'punctuation.definition.keyword'],
+      scope: [
+        'keyword',
+        'punctuation.definition.keyword',
+      ],
       settings: {
         foreground: '#FF79C6',
       },

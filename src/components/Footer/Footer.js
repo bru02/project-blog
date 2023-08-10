@@ -28,8 +28,8 @@ function Footer() {
             <a href="https://www.joyofreact.com/">
               The Joy of React
             </a>{' '}
-            to learn how to build dynamic React apps like
-            this one!
+            to learn how to build dynamic React apps
+            like this one!
           </p>
         </div>
         <nav>

@@ -7,16 +7,17 @@ function Equation({ dividend, divisor, remainder }) {
     <p className={styles.wrapper}>
       {dividend} ÷ {divisor} ={' '}
       {Math.floor(dividend / divisor)}
-      {typeof remainder === 'number' && remainder > 0 && (
-        <span className={styles.remainderPhrase}>
-          {' '}
-          (and{' '}
-          <span className={styles.remainderDigit}>
-            {remainder}
-          </span>{' '}
-          leftover)
-        </span>
-      )}
+      {typeof remainder === 'number' &&
+        remainder > 0 && (
+          <span className={styles.remainderPhrase}>
+            {' '}
+            (and{' '}
+            <span className={styles.remainderDigit}>
+              {remainder}
+            </span>{' '}
+            leftover)
+          </span>
+        )}
     </p>
   );
 }
